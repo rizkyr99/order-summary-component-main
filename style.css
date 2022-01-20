@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #e0e8ff url('images/pattern-background-desktop.svg') no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container .image-hero {
+    width: 100%;
+}
+
+.container-body {
+    padding: 40px;
+}
+
+.container-body .title {
+    color: #1f3056;
+    font-weight: 900;
+    margin: 0;
+}
+
+.container-body .description {
+    font-size: 14px;
+    padding: 0 30px;
+    line-height: 1.5em;
+    color: #81899c;
+    margin-bottom: 20px;
+}
+
+.container-body .price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    background-color: #f8f9fe;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container-body .price-box .icon {
+    margin-right: 20px;
+}
+
+.container-body .price-box .price-info {
+    display: flex;
+}
+
+.container-body .price-box .price-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-body .price-box .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.container-body .price-box .price {
+    color: #81899c;
+}
+
+.container-body .price-box a {
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #382ae1;
+}
+
+.proceed-button {
+    font-weight: bold;
+    width: 100%;
+    padding: 12px;
+    background-color: #382ae1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    color: #81899c;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 426px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .container-body {
+        padding: 20px;
+    }
+
+    .container-body .title {
+        font-size: 24px;
+    }
+
+    .container-body .description {
+        padding: 0 10px;
+    }
+
+    .container-body .price-box .title {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .container-body .price-box .price {
+        font-size: 12px;
+    }
+}
